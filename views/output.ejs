@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User</title>
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+    <div class="fon1 fon3">
+        <header class="fon1 fon4">
+            <button class="atuin-btn"><a href="/">Главная страница</a></button>
+        </header>
+        <div class="conteiner">
+            <h1>Пользователи: </h1>
+            <ul>
+                <% files.forEach((el) => { %>
+                    
+                    <li><%= el %></li>
+                    <% }) %>
+            </ul>
+            </div>
+    </div>
+</body>
+<script>
+</script>
+</html>

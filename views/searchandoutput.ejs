@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User</title>
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+    <div class="fon1 fon3">
+        <header class="fon1 fon4">
+            <button class="atuin-btn"><a href="/">Главная страница</a></button>
+            <button class="atuin-btn"><a href="/output">Показать всех пользователей</a></button>
+        </header>
+        <form method="post" action="/sear">
+            <div class="fon1 fon2 fon3">
+                <h1>Тайтлы: </h1>
+                        <% for(let i =0;i<(test.length-1);i++){ %>
+                            <div>
+                                <input class="atuin-btn" type="submit" name="user"=<%= (test[i]) %> value="<%= (test[i]) %>"></div>
+                            <%}%>                  
+                        
+                </div>
+            </form>
+    </div>
+</body>
+<script>
+</script>
+</html>

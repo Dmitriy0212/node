@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Node</title>
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+    <header class="fon3 fon1">
+        <div class="fon1">
+            <h1>Главная страница</h1>
+        </div>
+        <div class="fon1">
+            <button class="atuin-btn"><a href="/registration">Добавить анимку</a></button>
+            <form class="fon5" method="post" action="/search">
+                <input type="text" name="tatlname" placeholder="Введите название">
+                <button class="atuin-btn" type="submit">Поиск</button>
+            </form>
+        
+        </div>
+        <form method="post" action="/sear">
+        <div class="fon1 fon2 fon3">
+            <h1>Тайтлы: </h1>
+                    <% for(let i =files2;i<(files1);i++){ %>
+                        <div class="divcont fon5 fon6" >
+                            <input class="atuin-btn" type="submit" name="user"=<%= (files[i]) %> value="<%= (files[i]) %>"></div>
+                        <%}%>                  
+                    
+            </div>
+        </form>
+        <div class="fon7">
+            
+            <% if((files1)>(2)){ %>
+            <form method="post" action="/beck">
+                <input class="fon8" type="submit" value="Назад">
+            </form>
+            <%}%>
+            <% for(let i =0;i<(files4);i++){ %>
+                <div>
+                    <form method="post" action="/arai">
+                        <input class="atuin-btn" type="submit" name="peig"=<%= (i+1) %> value="<%= (i+1) %>">
+                    </form>
+                    
+                </div>
+                <%}%> 
+            <% if((files1)<(files3)){ %>
+            <form method="post" action="/gou">
+                <input class="fon8" type="submit" value="Вперед">
+            </form>
+            <%}%>
+        </div>
+        
+        </div>
+    </header>   
+</body>
+<script>    
+</script>
+</html>

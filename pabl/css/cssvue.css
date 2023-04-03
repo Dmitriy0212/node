@@ -1,0 +1,120 @@
+html {
+    background-image: url(https://mobimg.b-cdn.net/v3/fetch/70/703e3aefd9500eff0f63294bc383ac2a.jpeg?w=1000&r=0.5625);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+a{
+    color: aqua;
+    font-size: 12px;
+}
+p{
+    color:#00ffe7;
+}
+.atuin-btn {
+    text-decoration: none;
+    position: relative;
+    color: #FFF;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Roboto Condensed', Тahoma, sans-serif;
+    background: #ff0000;
+    cursor: pointer;
+    border: 2px solid #BFE2FF;
+    outline: 1px solid;
+    outline-color: #337AB7;
+    outline-offset: 0px;
+    text-shadow: none;
+    transition: all 1.5s cubic-bezier(0.19, 1, 0.22, 1);
+    border-radius: 3px;
+}
+.atuin-btn:hover,
+.atuin-btn:active,
+.atuin-btn:focus {
+    box-shadow: inset 0 0 20px #BFE2FF;
+    outline-color: rgba(255, 255, 255, 0);
+    outline-offset: 15px;
+    color: #FFF;
+}
+.atuinBtnLoad {
+    display: inline-flex;
+    margin: 5px;
+    text-decoration: none;
+    position: relative;
+    font-size: 10px;
+    line-height: 10px;
+    padding: 6px 10px;
+    color: #FFF;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Roboto Condensed', Тahoma, sans-serif;
+    background: #337AB7;
+    cursor: pointer;
+    border: 2px solid #BFE2FF;
+    overflow: hidden;
+    z-index: 1;
+    border-radius: 5px;
+}
+.atuinBtnLoad:hover,
+.atuinBtnLoad:active,
+.atuinBtnLoad:focus {
+    color: #FFF;
+}
+.atuinBtnLoad:before,
+.atuinBtnLoad:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 20px;
+    height: 100%;
+    background-color: #1C4B73;
+    z-index: -1;
+}
+.atuinBtnLoad:before {
+    left: -20px;
+    transform: translate(-50%, -50%);
+}
+.atuinBtnLoad:after {
+    right: -20px;
+    transform: translate(50%, -50%);
+}
+.atuinBtnLoad:hover:before,
+.atuinBtnLoad:active:before,
+.atuinBtnLoad:focus:before {
+    animation: from-left 0.5s both;
+}
+.atuinBtnLoad:hover:after,
+.atuinBtnLoad:active:after,
+.atuinBtnLoad:focus:after {
+    animation: from-right 0.5s both;
+}
+@keyframes from-right {
+    0% {
+        right: -20px;
+    }
+    50% {
+        right: 50%;
+        width: 20px;
+    }
+    100% {
+        right: 50%;
+        width: 100%;
+    }
+}
+@keyframes from-left {
+    0% {
+        left: -20px;
+    }
+    50% {
+        left: 50%;
+        width: 20px;
+    }
+    100% {
+        left: 50%;
+        width: 100%;
+    }
+}
