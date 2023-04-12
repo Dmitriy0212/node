@@ -4,8 +4,8 @@
   "main": "index.js",
   "scripts": {
     "start": " nodemon index.js",
-    "build": "npm run ejs",
-    "deploy": "cd dist && rsync --archive --compress --delete . pepelsbey@pepelsbey.dev:/var/www/pepelsbey.dev/views/ejs/"
+    "build": "npm run html && npm run styles",
+    "deploy": "cd dist && rsync --archive --compress --delete . pepelsbey@pepelsbey.dev:/var/www/pepelsbey.dev/html/"
   },
   "author": "",
   "license": "ISC",
