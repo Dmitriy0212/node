@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": " nodemon index.js"
+    "start": " nodemon index.js",
+    "build": "npm run ejs",
+    "deploy": "cd dist && rsync --archive --compress --delete . pepelsbey@pepelsbey.dev:/var/www/pepelsbey.dev/views/ejs/"
   },
   "author": "",
   "license": "ISC",
